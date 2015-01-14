@@ -13,4 +13,7 @@
 @property NSString *firstName;
 @property NSString *lastName;
 
+-(void) run; //instance method
+
+-(void) eat:(NSString *) food;
 @end

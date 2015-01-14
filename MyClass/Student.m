@@ -10,5 +10,11 @@
 
 @implementation Student
 
+-(void) run {
+    NSLog(@"%@ %@ is runnung", self.firstName, self.lastName);
+}
 
+-(void) eat:(NSString *)food {
+    NSLog(@"%@ %@ eats %@", self.firstName, self.lastName, food);
+}
 @end

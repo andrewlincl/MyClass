@@ -19,7 +19,10 @@ int main(int argc, const char * argv[]) {
         stu.firstName = @"Steve";
         stu.lastName = @"Lin";
         
-        NSLog(@" Student's Name is %@ %@", stu.lastName, stu.firstName);
+        NSLog(@" Student's Name is %@ %@", stu.firstName, stu.lastName);
+        
+        [stu run];
+        [stu eat:@"Banana"];
     }
     return 0;
 }
