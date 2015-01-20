@@ -18,12 +18,18 @@
     NSLog(@"%@ %@ eats %@", self.firstName, self.lastName, food);
 }
 
--(void) say:(NSString *)something to:(NSString *)someone {
-    NSLog(@"%@ says %@ to %@", self.firstName, something, someone);
+-(void) say:(NSString *)something to:(Student *)someone {
+    NSLog(@"%@ says %@ to %@", self.firstName, something, someone.firstName);
 }
 
 -(void) say:(NSString *)something {
     NSLog(@"%@ says %@", self.firstName, something);
+}
+
+-(int)calculateTuitionFee {
+    //...
+    
+    return 1000;
 }
 
 +(Student *)createWithFirstName:(NSString *)firstName andLastName:(NSString *)lastName {

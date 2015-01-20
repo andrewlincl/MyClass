@@ -14,6 +14,7 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         //NSLog(@"Hello, World!");
         
+        /* Point exercise
         int i=20; //宣告一個變數i 為整數型態，且值為20
         NSLog(@"i = %d", i);
         NSLog(@"&i = %p", &i);  //取得變數Ｉ的記憶體位置，＆是取指運算子．
@@ -30,6 +31,7 @@ int main(int argc, const char * argv[]) {
         
         k = 40;
         NSLog(@"When k=40, then i=%d", i);
+        */
         
         /*
         Student *stu = [Student new];
@@ -37,16 +39,19 @@ int main(int argc, const char * argv[]) {
         stu.lastName = @"Lin";
         */
         
-        /*
-        Student *stu = [Student createWithFirstName:@"Steve" andLastName:@"Lin"];
         
-        NSLog(@" Student's Name is %@ %@", stu.firstName, stu.lastName);
+        Student *stud = [Student createWithFirstName:@"Steve" andLastName:@"Lin"];
+        Student *stud2 = [Student createWithFirstName:@"Jane" andLastName:@"Wu"];
+        NSLog(@" Student's Name is %@ %@", stud.firstName, stud.lastName);
         
-        [stu run];
-        [stu eat:@"Banana"];
-        [stu say:@"Hello" to:@"Peter"];
-        [stu say:@"Hi"];
-        */
+        [stud run];
+        [stud eat:@"Banana"];
+        [stud say:@"Hello" to:stud2];
+        [stud say:@"Hi"];
+        
+        int fee = [stud calculateTuitionFee];
+        NSLog(@"Tuition fee is %d", fee);
+        
     }
     return 0;
 }

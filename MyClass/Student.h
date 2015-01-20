@@ -13,10 +13,11 @@
 @property NSString *firstName;
 @property NSString *lastName;
 
--(void) run; //instance method
--(void) eat:(NSString *)food;
--(void) say:(NSString *)something to:(NSString *)someone;
--(void) say:(NSString *)something;
+-(void)run; //instance method
+-(void)eat:(NSString *)food;
+-(void)say:(NSString *)something to:(Student *)someone;
+-(void)say:(NSString *)something;
+-(int)calculateTuitionFee;
 
 +(Student *)createWithFirstName:(NSString *)firstName andLastName:(NSString *)lastName;
 
