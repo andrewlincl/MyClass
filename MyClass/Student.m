@@ -22,8 +22,20 @@
     NSLog(@"%@ says %@ to %@", self.firstName, something, someone.firstName);
 }
 
+/*
 -(void) say:(NSString *)something {
     NSLog(@"%@ says %@", self.firstName, something);
+}
+*/
+
+-(void) say:(NSString *)something2 {
+    NSString *myMsg = [NSString stringWithFormat:@"%@ says %@", self.firstName, something2];
+    [self printOutMsg:myMsg];
+    //NSLog(@"%@ says %@", self.firstName, something2);
+}
+
+-(void)printOutMsg:(NSString *)msg {
+    NSLog(@"%@", msg);
 }
 
 -(int)calculateTuitionFee {
