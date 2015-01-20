@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				9ADEC4951A6663EF00E5C663 /* main.m */,
-				9ADEC49C1A66659200E5C663 /* Student.m */,
 				9ADEC49E1A6665C900E5C663 /* Student.h */,
+				9ADEC49C1A66659200E5C663 /* Student.m */,
 			);
 			path = MyClass;
 			sourceTree = "<group>";
@@ -238,6 +238,7 @@
 				9ADEC49B1A6663EF00E5C663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
